@@ -40,7 +40,7 @@ Eventer = (function() {
       },
       deleteSubscriber: function(sub) {
         var index = _private.getIndex(sub);
-        _private.splice(index, 1);
+        _private.subscribers.splice(index, 1);
       },
       getIndex: function(newSub) {
         var i = 0;
